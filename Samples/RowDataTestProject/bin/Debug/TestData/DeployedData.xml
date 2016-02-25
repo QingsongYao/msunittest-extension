@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Rows>
+  <Row>
+    <Number1>1</Number1>
+    <Number2>2</Number2>
+    <Result>3</Result>
+  </Row>
+  <Row>
+    <Number1>4</Number1>
+    <Number2>5</Number2>
+    <Result>9</Result>
+  </Row>
+</Rows>

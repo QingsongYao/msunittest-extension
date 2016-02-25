@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Document>
+  <EmbeddedRow>
+    <Row>
+      <Number1>1</Number1>
+      <Number2>2</Number2>
+      <Result>3</Result>
+    </Row>
+    <Row>
+      <Number1>4</Number1>
+      <Number2>5</Number2>
+      <Result>9</Result>
+    </Row>
+  </EmbeddedRow>
+  <EmbeddedRowParams>
+    <Row>
+      <i>42</i>
+      <text>No params</text>
+    </Row>
+    <Row>
+      <i>99</i>
+      <text>A</text>
+      <world>few</world>
+      <world>words</world>
+    </Row>
+    <Row>
+      <i>200</i>
+      <text>A</text>
+      <world>few</world>
+      <word>more</word>
+      <world>words</world>
+    </Row>
+  </EmbeddedRowParams>
+</Document>

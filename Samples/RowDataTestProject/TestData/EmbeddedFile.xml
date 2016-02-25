@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Document>
+  <RowSection>
+    <Row>
+      <Number1>1</Number1>
+      <Number2>2</Number2>
+      <Result>3</Result>
+    </Row>
+    <Row>
+      <Id>11</Id>
+      <Desc>Description</Desc>
+      <Ignore>false</Ignore>
+      <Bug>321</Bug>
+      <Number1>4</Number1>
+      <Number2>5</Number2>
+      <Result>9</Result>
+    </Row>
+    <Row>
+      <Id>12</Id>
+      <Desc></Desc>
+      <Number1>4</Number1>
+      <Number2/>
+      <Result></Result>
+    </Row>
+  </RowSection>
+  <ParamsSection>
+    <Row>
+      <i>42</i>
+      <text>No params</text>
+    </Row>
+    <Row>
+      <i>99</i>
+      <text>A</text>
+      <world>few</world>
+      <world>words</world>
+    </Row>
+    <Row>
+      <i>200</i>
+      <text>A</text>
+      <world>few</world>
+      <word>more</word>
+      <world>words</world>
+    </Row>
+  </ParamsSection>
+  <PropertiesSection>
+    <Row>
+      <i>1</i>
+      <text>Properties 1</text>
+      <Properties>
+        <Prop1>4</Prop1>
+        <Prop2>Foo</Prop2>
+      </Properties>
+    </Row>
+    <Row>
+      <i>2</i>
+      <text>Properties 2</text>
+      <Properties>
+        <Prop3>5</Prop3>
+        <Prop4><![CDATA[Bar<>]]></Prop4>
+      </Properties>
+    </Row>
+  </PropertiesSection>
+</Document>

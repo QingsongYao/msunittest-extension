@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProductVersion>10.0.20505</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0251E2A5-35CE-4188-A35B-5F99EDDBD9EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Test.VSUnitTest.TestTypeExtension</RootNamespace>
+    <AssemblyName>Microsoft.Test.VSUnitTest.TestTypeExtension</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <VsunitProjectImport>ssm</VsunitProjectImport>
+    <VsunitProjectTeam>Common</VsunitProjectTeam>
+    <ScopasAssemblyCLSCompliant>false</ScopasAssemblyCLSCompliant>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>default</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>default</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\Microsoft.VisualStudio.QualityTools.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.Vsip, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\Microsoft.VisualStudio.QualityTools.Vsip.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\AttributeHelper.cs" />
+    <Compile Include="Common\StringLogicalComparer.cs" />
+    <Compile Include="Log\ILogWriter.cs" />
+    <Compile Include="Log\LogType.cs" />
+    <Compile Include="Log\LogWriter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RowTestType\TestExcludeAttribute.cs" />
+    <Compile Include="RowTestType\TestIncludeAttributeBase.cs" />
+    <Compile Include="RowTestType\RowFilterAttribute.cs" />
+    <Compile Include="RowTestType\RowTestContext.cs" />
+    <Compile Include="RowTestType\TestExecutionAttribute.cs" />
+    <Compile Include="RowTestType\RowDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RowTestType\RowDetailsForm.Designer.cs">
+      <DependentUpon>RowDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RowTestType\RowDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RowTestType\RowDetails.Designer.cs">
+      <DependentUpon>RowDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RowTestType\SortableBindingSource.cs" />
+    <Compile Include="RowTestType\TestIncludeAttribute.cs" />
+    <Compile Include="RowTestType\HelperXml.cs" />
+    <Compile Include="RowTestType\HelperXmlFileRowsAttribute.cs" />
+    <Compile Include="RowTestType\HelperEmbeddedXmlRowsAttribute.cs" />
+    <Compile Include="RowTestType\ExtensionGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RowTestType\HelperTestGridResults.cs" />
+    <Compile Include="RowTestType\ExecutionExtension.cs" />
+    <Compile Include="RowTestType\ExtensionClientSide.cs" />
+    <Compile Include="RowTestType\ExtensionMethodInvoker.cs" />
+    <Compile Include="RowTestType\ExtensionUI.cs" />
+    <Compile Include="RowTestType\RowAttribute.cs" />
+    <Compile Include="RowTestType\ClassAttribute.cs" />
+    <Compile Include="RowTestType\ExtensionViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RowTestType\ExtensionViewer.Designer.cs">
+      <DependentUpon>ExtensionViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RowTestType\HelperTestResults.cs" />
+    <Compile Include="RowTestType\DataRowValues.cs" />
+    <Compile Include="RowTestType\ExtensionGridRow.cs" />
+    <Compile Include="RunAsTestType\ClassAttribute.cs" />
+    <Compile Include="RunAsTestType\ExtensionExecution.cs" />
+    <Compile Include="RunAsTestType\ExtensionClientSide.cs" />
+    <Compile Include="RunAsTestType\ExtensionMethodInvoker.cs" />
+    <Compile Include="RunAsTestType\ExtensionUI.cs" />
+    <Compile Include="RunAsTestType\HelperImpersonate.cs" />
+    <Compile Include="RunAsTestType\HelperUserAccounts.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RowTestType\Install.reg" />
+    <None Include="RowTestType\Uninstall.reg" />
+    <None Include="RunAsTestType\Install.reg" />
+    <None Include="RunAsTestType\Uninstall.reg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RowTestType\ExtensionViewer.resx">
+      <DependentUpon>ExtensionViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RowTestType\RowDetails.resx">
+      <DependentUpon>RowDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RowTestType\RowDetailsForm.resx">
+      <DependentUpon>RowDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProgressError.ico" />
+    <None Include="Resources\ProgressSuccess.ico" />
+    <None Include="Resources\RowTestType.ico" />
+    <None Include="..\InstallSsmUnitTestTypeExtension.cmd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Link>RunAsTestType\InstallSsmUnitTestTypeExtension.cmd</Link>
+    </None>
+    <None Include="..\readme.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Resources\UNKNOWN.ICO" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

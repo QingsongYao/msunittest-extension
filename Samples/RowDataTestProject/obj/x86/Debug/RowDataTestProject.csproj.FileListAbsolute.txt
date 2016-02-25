@@ -1,0 +1,15 @@
+C:\mstest\VsUnit\src_vs2012\Samples\RowDataTestProject\bin\Debug\TestData\DeployedData.xml
+C:\mstest\VsUnit\src_vs2012\Samples\RowDataTestProject\bin\Debug\TestData\DeployedWorkbook2007.xlsx
+C:\mstest\VsUnit\src_vs2012\Samples\RowDataTestProject\bin\Debug\Microsoft.SqlServer.Test.Samples.Common.HelperTests1.UnitTest.dll
+C:\mstest\VsUnit\src_vs2012\Samples\RowDataTestProject\bin\Debug\Microsoft.SqlServer.Test.Samples.Common.HelperTests1.UnitTest.pdb
+C:\mstest\VsUnit\src_vs2012\Samples\RowDataTestProject\bin\Debug\Microsoft.Test.VSUnitTest.TestTypeExtension.dll
+C:\mstest\VsUnit\src_vs2012\Samples\RowDataTestProject\bin\Debug\Microsoft.VisualStudio.Data.dll
+C:\mstest\VsUnit\src_vs2012\Samples\RowDataTestProject\bin\Debug\Microsoft.Data.ConnectionUI.dll
+C:\mstest\VsUnit\src_vs2012\Samples\RowDataTestProject\bin\Debug\Microsoft.Test.VSUnitTest.TestTypeExtension.pdb
+C:\mstest\VsUnit\src_vs2012\Samples\RowDataTestProject\bin\Debug\Microsoft.VisualStudio.Data.xml
+C:\mstest\VsUnit\src_vs2012\Samples\RowDataTestProject\bin\Debug\Microsoft.Data.ConnectionUI.xml
+C:\mstest\VsUnit\src_vs2012\Samples\RowDataTestProject\obj\x86\Debug\RowDataTestProject.csprojResolveAssemblyReference.cache
+C:\mstest\VsUnit\src_vs2012\Samples\RowDataTestProject\obj\x86\Debug\Microsoft.SqlServer.Test.Samples.Common.HelperTests1.UnitTest.dll
+C:\mstest\VsUnit\src_vs2012\Samples\RowDataTestProject\obj\x86\Debug\Microsoft.SqlServer.Test.Samples.Common.HelperTests1.UnitTest.pdb
+C:\mstest\VsUnit\src_vs2012\Samples\RowDataTestProject\bin\Debug\RunAsTestType\InstallSsmUnitTestTypeExtension.cmd
+C:\mstest\VsUnit\src_vs2012\Samples\RowDataTestProject\bin\Debug\readme.txt
